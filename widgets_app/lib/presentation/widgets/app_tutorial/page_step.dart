@@ -26,14 +26,37 @@ class PageStep extends StatelessWidget {
             if (changePage == null) return;
             changePage!(index);
           },
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 150),
-            width: size,
-            height: size,
-            margin: const EdgeInsetsDirectional.symmetric(horizontal: 10),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: isPrimary ? colors.primary : colors.secondary,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 150),
+                  width: size,
+                  height: size,
+                  margin: const EdgeInsetsDirectional.symmetric(horizontal: 10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: isPrimary
+                        ? colors.primary
+                        : colors.primary.withOpacity(0.5),
+                  ),
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  width: isPrimary ? size : size / 2,
+                  height: size / 12,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: isPrimary
+                        ? colors.primary
+                        : colors.primary.withOpacity(0.5),
+                  ),
+                )
+              ],
             ),
           ),
         );

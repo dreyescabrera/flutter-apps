@@ -55,4 +55,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Small intro tutorial',
       url: AppRouter.tutorial,
       icon: Icons.interests_rounded),
+  MenuItem(
+      title: 'Infinite Scroll and Pull-to-Refresh',
+      subTitle: 'Professional app incoming',
+      url: AppRouter.infiniteScroll,
+      icon: Icons.list_alt_outlined),
 ];
