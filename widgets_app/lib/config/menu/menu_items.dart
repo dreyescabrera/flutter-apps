@@ -26,11 +26,6 @@ const appMenuItems = <MenuItem>[
       url: AppRouter.cards,
       icon: Icons.credit_card),
   MenuItem(
-      title: 'Cards',
-      subTitle: 'A styled container',
-      url: AppRouter.cards,
-      icon: Icons.credit_card),
-  MenuItem(
       title: 'Progress Indicator',
       subTitle: 'Controlled and uncontrolled',
       url: AppRouter.progress,
@@ -60,4 +55,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Professional app incoming',
       url: AppRouter.infiniteScroll,
       icon: Icons.list_alt_outlined),
+  MenuItem(
+      title: 'Riverpod Counter',
+      subTitle: 'Intro to riverpod',
+      url: AppRouter.riverpod,
+      icon: Icons.add),
 ];

@@ -3,6 +3,7 @@ import 'package:widgets_app/presentation/screens/animated/animated_screen.dart';
 import 'package:widgets_app/presentation/screens/app_tutorial/app_tutorial_screen.dart';
 import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
+import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
 import 'package:widgets_app/presentation/screens/home/home_screen.dart';
 import 'package:widgets_app/presentation/screens/infinite_scroll/infinite_scroll_screen.dart';
 import 'package:widgets_app/presentation/screens/progress/progress_screen.dart';
@@ -19,6 +20,7 @@ class AppRouter {
   static const uiControls = '/uiControls';
   static const tutorial = '/tutorial';
   static const infiniteScroll = '/infiniteScroll';
+  static const riverpod = '/riverpod';
 
   static GoRouter router = GoRouter(
     initialLocation: '/',
@@ -58,6 +60,10 @@ class AppRouter {
       GoRoute(
         path: infiniteScroll,
         builder: (context, state) => const InfiniteScrollScreen(),
+      ),
+      GoRoute(
+        path: riverpod,
+        builder: (context, state) => const CounterScreen(),
       ),
     ],
   );
