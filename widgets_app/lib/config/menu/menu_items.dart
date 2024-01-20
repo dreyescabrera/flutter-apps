@@ -60,4 +60,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Intro to riverpod',
       url: AppRouter.riverpod,
       icon: Icons.add),
+  MenuItem(
+      title: 'Theme Changer',
+      subTitle: 'Change the theme colors',
+      url: AppRouter.themeChanger,
+      icon: Icons.color_lens_outlined),
 ];
