@@ -1,16 +1,14 @@
 # cinemapedia_app
 
-A new Flutter project.
+This project is a simple app that uses the [MovieDB API](https://developers.themoviedb.org/3/getting-started/introduction) to fetch movies and display them in a list.
 
-## Getting Started
+I made this app to learn good practices in software architecture and design. Here are some of the things I learned and implemented:
 
-This project is a starting point for a Flutter application.
+## Clean Architecture
 
-A few resources to get you started if this is your first Flutter project:
+I used the [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) to design this app. The main idea is to separate the different layers of the app in different packages. This way, the code is easier to understand and maintain.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The layers of the app are represented by:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    Entities:
+        - Movie
